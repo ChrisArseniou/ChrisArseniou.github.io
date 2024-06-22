@@ -1,731 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Chris Arseniou's Portofolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christos Arseniou</title>
+    <!--=================== Google Fonts ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!--=================== Remixicons ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=================== SwiperJS CSS ====================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link href="assets/img/asc3.png" rel="shortcut icon" type="image/x-icon">
+
+
+
+    <!--=================== Main CSS ====================-->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js" integrity="sha512-gsEItzcNkWxfxHjr4BaEZAd9YuRWYjxnj7c/yukcZ0/nWehUb5TjJNyyv1ApCU2DFH/qgw+stFZHPOKnoQnIuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js" integrity="sha512-ko44b+LlYXwGZI6Gey6Tgrhew9JEPdSE6m7FqDyGGPDW+dDOjsCElEtiUIRRtCXRNHwKheBCnHCQSMdUz/pgkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/b90a16c0c9.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbarScroll">
+
+    <!--=================== Header ====================-->
+    <header id="header" class="header">
         <div class="container">
-            <!-- <a class="navbar-brand" href="#">Chris Arseniou</a> -->
-			<img class="card-img-top" src="images/logo3.png" alt="Card image" style= "width: 11%;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home" style="color:#01B5D5;" >Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about" style="color:#01B5D5;" >About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services" style="color:#01B5D5;" >Interests</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio" style="color:#01B5D5" >Portfolio</a>
-                    </li>
-					<li class="nav-item">
-                        <a class="nav-link" href="resume.png" style="color: #FC981F; font-family:Cursive;" target="_blank" >CV</a>
-                    </li>
-					<!--
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact" style="color:#238f51;" >Contact</a>
-                    </li>
-					-->
-                </ul>
-                
-            </div>
-        </div>
-    </nav>
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                <h2 class="hero_title" style= "position:relative; top:-170px;">Chris Arseniou</h2>
-                <!-- <p class="hero_desc">and this is my portfolio!</p> -->
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/about_round_3.png" class= "imageAboutPage" alt="" style= " position:relative; left: 70px;">
+            <nav class="nav">
+                <a href="index.html" class="nav__brand">
+                    <i class="ri-code-s-slash-line"></i>Chris<Span>Arseniou</Span>
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#hero" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qualification" class="nav__link">Experience</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#service" class="nav__link">Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#project" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact"  class="nav__link">Contact</a>
+                        </li>
+                    </ul>
                 </div>
+                <div class="nav__toggle">
+                    <i id="nav-toggle" class="ri-menu-3-line"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--=================== main ====================-->
+    <main class="main">
+        <!--=================== Hero ====================-->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="d-grid hero__wrapper">
+                    <div class="hero__content">
+                        <h1 class="hero__title">I'm Christos Arseniou,<br>Software  Engineer.</h1>
+                        <p class="hero__description">Helping people achieve their software dreams. 
+                            Let's work together to bring your next project to life.
+                        </p>
+                        <div class="hero__info">
+                            <div class="hero__info-wrapper">
+                                <p class="hero__info-number" id="count">3</p>
+                                <h2 class="hero__info-title">Years Experience</h2>
+                            </div>
+                            <div class="hero__info-wrapper">
+                                <p class="hero__info-number" id="count2">15</p>
+                                <h2 class="hero__info-title">Projects Completed</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img/chris2.png" alt="Shawn" class="hero__img">
+                </div>
+            </div>
+        </section>
 
-                <div class="col-lg-5" style = "position:relative; left:190px; top:9px;">
-                    <p align="justify"> <font size="+2" > Undergraduate student and expected to graduate in 2023.  About to be 23  years old with true passion to work aiming to become a great team player. My high learnability makes me stand out. </font>
+        <!--=================== About ====================-->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">About Me</h2>
+                    <span class="section__subtitle">Who am I</span>
+                </div>
+                <div id="main2" class="d-grid2 about__wrapper">
+                    <div class="about__content">
+                        <h3 class="about__title">Transforming Ideas into Reality, One Line of Code at a Time. </h3>
+                         <p class="about__description">Don't miss out on the digital revolution! Embrace the future with innovative software solutions. Transform your business and stay ahead of the curve.
+                        </p> -
+                        <!-- <a href="#project" class="btn btn--primary">Know More</a> -->
+                    </div>
+
+                    <div class="skills">
+                        <h3 class="skills__title">Technologies I've been working with:</h3>
+                        <div class="skills__wrapper">
+                            <div class="skills__content">
+                                <h4 class="skills__subtitle">Backend</h4>
+                                <ul class="skills__list">
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Python</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        C#</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        MongoDB</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        MsSQL</li>
+                                </ul>
+                            </div>
+                            <div class="skills__content">
+                                <h4 class="skills__subtitle">Frontend</h4>
+                                <ul class="skills__list">
+                                    <!-- <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        HTML</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        CSS</li>
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        JavaScript</li> -->
+                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
+                                        Angular</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=================== Qualification ====================-->
+        <section id="qualification" class="section qualification">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Experience</h2>
+                    <span class="section__subtitle">Experience & Education</span>
+                </div>
+                <!--============== Professional Experience ============-->
+                <div class="qualification__wrapper">
+                    <h3 class="qualification__name">
+                        <i class="ri-briefcase-fill"></i>
+                        Professional Experience
+                    </h3>
+                    <div class="d-grid qualification__content">
+                        <!-- Experience 1-->
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Software Engineer</h3>
+                            <ul class="responsibilities">
+                                <li class="aligned-text">Leveraging Python to create machine learning models for data-driven insights and optimizations in the banking industry.</li>
+                                <li class="aligned-text">Developing and enhancing microservices using .NET (C#) with a focus on unit testing and code quality.</li>
+                            </ul>
+                            <span class="qualification__date">2023 - Present</span>
+                        </div>
                         
-                    </p>
-					
-					
-					<!--
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: Chris Arseniou</li>
-                                <li>Age: 22</li>
-                                <li>Occupation: Data Engineer </li>
-
+                        <!-- Experience 2-->
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Freelance Developer</h3>
+                            <ul class="responsibilities2">
+                                <li class="aligned-text">Collaborating with clients to understand requirements, propose solutions, and delivering high-quality software within deadlines.</li>
+                                <li class="aligned-text">Developing customized solutions for clients, including portofolios, and business websites.</li>
                             </ul>
+                            <span class="qualification__date">2023 - Present</span>
                         </div>
-						
-						
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: David Parker</li>
-                                <li>Age: 28</li>
-                                <li>Occupation: Web Developer</li>
+                        <!-- Experience 3-->
+                        <!-- <div class="qualification__item">
+                            <h3 class="qualification__title"></h3>
+                            <p class="qualification__description">.</p>
+                            <span class="qualification__date"></span>
+                        </div> -->
+                    </div>
+                </div>
 
-                            </ul>
+                <!--============== Education ============-->
+
+                <!-- <div class="qualification__wrapper">
+                    <h3 class="qualification__name">
+                        <i class="ri-booklet-fill"></i>
+                        Education
+                    </h3>
+                    <div class="d-grid qualification__content">
+                        
+                        <div class="qualification__item">
+                            <h3 class="qualification__title">Electrical and Computer Engineer</h3>
+                            <p class="qualification__description">
+                            </p>
+                            <span class="qualification__date">2018 - 2023</span>
                         </div>
-						
-                    </div> --> 
-                    <div class="row mt-3">
-                        <p align="justify"> 
-							<font size="+2">
-							This website shows my portofolio throught the years. It consists of projects from university courses, and personal projects.
-							</font>
-							
-						
+                       
+                        <div class="qualification__item">
+                            <h3 class="qualification__title"></h3>
+                            <p class="qualification__description">
+                            </p>
+                            <span class="qualification__date"></span>
+                        </div>
+                        
+                         <div class="qualification__item">
+                            <h3 class="qualification__title"></h3>
+                            <p class="qualification__description"></p>
+                            <span class="qualification__date"></span>
+                        </div> 
+                    </div>
+                </div> -->
+                <div class="qualification__footer">
+                    <p class="qualification__footer-text">See my full resume</p>
+                    <a href="./assets/Christos_Arseniou.png" download target="_blank" class="btn btn--primary btn--shadow">Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=================== services ====================-->
+        <section id="service" class="section service">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Services</h2>
+                    <span class="section__subtitle">What I do</span>
+                </div>
+                <div class="d-grid service__wrapper">
+ 
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="ri-layout-4-fill"></i>
+                        </div>
+                        <h3 class="service__title">Frontend<br>Development</h3>
+                        <!-- <a href="#" class="service__link">Know More</a> -->
+                    </div>
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="ri-code-s-slash-line"></i>
+                        </div>
+                        <h3 class="service__title">Backend<br> Development</h3>
+                        <!-- <a href="#" class="service__link">Know More</a> -->
+                    </div>
+                    <div class="service__card">
+                        <div class="service__icon">
+                            <i class="ri-weibo-fill"></i>
+                        </div>
+                        <h3 class="service__title">AI<br> Solutions</h3>
+                        <!-- <a href="#" class="service__link">Know More</a> -->
+                    </div>
+                    <!-- <div class="service__card">
+                        <div class="service__icon">
+                            <i class="ri-pen-nib-fill"></i>
+                        </div>
+                        <h3 class="service__title">UI/UX<br> Design</h3>
+                        <a href="#" class="service__link">Know More</a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!--=================== Projects ====================-->
+        <section id="project" class="section project">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Projects</h2>
+                    <span class="section__subtitle">My recent work</span>
+                </div>
+                <div class="d-grid project__wrapper">
+                    <!--============== project 1 =============-->
+
+                    <!-- row 1 -->
+                    <div class="project__content">
+                        <img src="assets/img/qoe.png" alt="Crypto Application " class="project__img" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 0px; width: 80%;">
+                        <h3 class="project__title">Quality Of Experience Prediction</h3>
+                        <p class="project__description aligned-text">Working with a Fortune-500 company we built a sequence to sequence preditive machine learning model. Our main goal was to predict each user’s quality of experience of the events for the upcoming months.</p>
+                        <a href="https://github.com/ChrisArseniou/deep_learning_course" class="project__link">View Project
+                            <i class="ri-arrow-right-line"></i></a>
+                    </div>
+
+                    <div class="project__content">
+                        <img src="assets/img/btc.png" alt="Agency Website" class="project__img" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 0px; width: 47.2%;">
+                        <h3 class="project__title">Cryptoworld Website</h3>
+                        <p class="project__description">Website Made With Angular in order to showcase Crypto prices in Real-Time.</p>
+                        <a href="https://github.com/ChrisArseniou/cryptoworld" class="project__link" target="_blank">View Project
+                            <i class="ri-arrow-right-line"></i>
+                        </a>                        
+                    </div>
+
+                    <div class="project__content">
+                        <img src="assets/img/ath.png" alt="Crypto Application " class="project__img"  style= "display: block; margin-left: auto; margin-right: auto; margin-top: 20px; width: 80%;">
+                        <h3 class="project__title">Recommendation System for Athens Trip</h3>
+                        <p class="project__description aligned-text">With data from TripAdvisor that refers to Hotels, Activities, Airlines and Restaurants and consists of usernames, ratings and reviews, a recommendation system was built. It can make recommendations based on a user's past, and based on a specific input for what the user is looking. </p>
+                        <a href="https://github.com/ChrisArseniou/Recommender-system-for-touristic-Athens-based-on-reviews-and-emotions" class="project__link" target="_blank">View Project
+                            <i class="ri-arrow-right-line"></i></a>
+                    </div>
+
+                    <!-- row 2 -->
+                    <!--============== project 3 =============-->
+                    <div class="project__content">
+                        <img src="assets/img/ff.png" alt="Ecommerce Website" class="project__img" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 15px; width: 47.2%;">
+                        <h3 class="project__title">FireFinder</h3>
+                        <p class="project__description aligned-text">IoT system consisting of multiple nodes and gateways, aiming to record data that represent the forest status. Each node has a thermal camera and temperature, humidity, CO and CO2 sensors. With the implementation of a detection algorithm, a early fire prediction can be achieved. </p>
+                        <a href="https://github.com/ChrisArseniou/FireFinder/tree/main" class="project__link" target="_blank">View Project
+                            <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                    <!-- ============== project 4 ============= -->
+                    <div class="project__content">
+                        <img src="assets/img/inflation.png" alt="Crypto Application " class="project__img" style= "display: block; margin-left: auto; margin-right: auto; margin-top: px; width: 80%;">
+                        <h3 class="project__title">Inflation Forecasting</h3>
+                        <p class="project__description aligned-text">This is my diploma thesis. Using deep learning neural networks such as LSTM, and counting extrernal data and parameters such as unemployment rate and real estate circle, i aim to forecast the inflation rate for the upcoming years.</p>
+                        <a href="https://github.com/ChrisArseniou/Inflation-forecasting-thesis" class="project__link">View Project
+                            <i class="ri-arrow-right-line"></i></a>
+                    </div>
+
+                    <div class="project__content">
+                        <img src="assets/img/emotion.png" alt="Crypto Application " class="project__img" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 25px; width: 47.2%;">
+                        <h3 class="project__title">Twitter Sentiment Analysis</h3>
+                        <p class="project__description aligned-text">Natural language processing (NLP) that identifies the emotional tone behind a tweet, especially referring to Covid-19. Designs wordclouds for positive, negative and neutral tweets.The Streamlit python framework was really helpful in building the user interface.</p>
+                        <a href="https://github.com/ChrisArseniou/Twitter-Sentiment-Analysis" class="project__link">View Project
+                            <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+
+                <!-- row 3 -->
+                <div class="d-grid project__wrapper">
+
+                    <div class="project__content">
+                        <img src="assets/img/filebrowser.png" alt="Crypto Application " class="project__img" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 45px; width: 100%;">
+                        <h3 class="project__title">File Browser</h3>
+                        <p class="project__description aligned-text">With Java and especially the Swing GUI, i built a file browser. Users can copy, paste and move files, and navigate through their folders.</p>
+                        <a href="https://github.com/ChrisArseniou/File-Browser-In-Java" class="project__link">View Project
+                            <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=================== Testimonials ====================-->
+        <!-- <section id="testimonial" class="section testimonial">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Testimonials</h2>
+                    <span class="section__subtitle">What my clients say</span>
+                </div>
+                <div class="testimonial__wrapper swiper">
+                    <div class="swiper-wrapper">
+                        <!--========= testimonial 1 ============ -->
+                        <!-- <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/testimonial1.jpg" alt="Natasha Smith" class="testimonial__img">
+                            <div class="testimonial__content">
+                                <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur. Dignissim
+                                    tincidunt egestas vitae porttitor nulla gravida commodo.</p>
+                                <h3 class="testimonial__name">Natasha Smith</h3>
+                                <span class="testimonial__occupation">UI/UX Designer at Dribbble</span>
+                            </div>
+                        </div> -->
+                        <!--========= testimonial 2 ============ -->
+                        <!-- <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/testimonial2.jpg" alt="John Clarke" class="testimonial__img">
+                            <div class="testimonial__content">
+                                <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur. Dignissim
+                                    tincidunt egestas vitae porttitor nulla gravida commodo.</p>
+                                <h3 class="testimonial__name">John Clarke</h3>
+                                <span class="testimonial__occupation">Web Developer at Facebook</span>
+                            </div>
+                        </div> -->
+                        <!--========= testimonial 3 ============ -->
+                        <!-- <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/testimonial3.jpg" alt="Emily Walker" class="testimonial__img">
+                            <div class="testimonial__content">
+                                <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur. Dignissim
+                                    tincidunt egestas vitae porttitor nulla gravida commodo.</p>
+                                <h3 class="testimonial__name">Emily Walker</h3>
+                                <span class="testimonial__occupation">Backend Developer at Google
+                                </span>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--=================== Contact ====================-->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="d-grid contact__wrapper">
+                    <div class="contact__content">
+                        <h2 class="contact__title">Ready to dive into your software adventure?</h2>
+                        <p class="contact__description aligned-text">
+                            Reach out to us today to discuss your project requirements, 
+                            discover our diverse range of services, and see how we can turn your software vision into a reality. 
+                            Let's join forces and craft the future of software together.
                         </p>
                     </div>
-					
-					<div class="row mt-3">
-                        <p align="justify"> 
-							<font size="+2">
-							Hey ChatGPT! Write something cool about my portofolio website, i ran out of ideas. Thank you. 
-							</font>
-							
-						
-                        </p>
+                    <div class="contact__btn">
+                        <a href="mailto:chris0arseniou@gmail.com" class="btn btn--primary btn--shadow">Get in touch</a>
                     </div>
                 </div>
             </div>
-			
-		</div>
-    </section>
-	
-	<br>
-	<br>
-    <!-- services section-->
-    <section id="services">
-        <div class="container">
-		
-            <h1 class="text-center">Topics Of Work</h1>
-			
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="servicesIcon fab fa-accusoft"></i>
-                            <h4 class="card-title mt-3">Software Development</h4>
-                            <p class="card-text mt-3" align="justify">Activities dedicated to the process of creating, designing, deploying and supporting software. Implemented with C, C++, Java and Python programming languages.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fas fa-braille'></i>
-                            <h4 class="card-title mt-3">Data Analytics</h4>
-                            <p class="card-text mt-3" align="justify"> Examining data sets in order to find trends and draw conclusions about the information they contain. Used mainly Python and RapidMiner with data in .csv form.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
+        </section>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='far servicesIcon fas fa-chart-line'></i>
-                            <h4 class="card-title mt-3">Timeseries Forecasting</h4>
-                            <p class="card-text mt-3" align="justify">  Analyzing time series data using statistics and modeling to make predictions and inform strategic decision-making. Neural Networks and AutoML were used.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
+        <section id="contact2">
+            <div class="container mt-3 contactContent">
+                <!-- <h1 class="text-center">Contact Me</h1> -->
+                <br>
+                <br>
+                <!-- <div class="col-lg-3">
+                    <div style="overflow:hidden;max-width:100%;width:500px;height:400px;"><div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Αγροζωοτροφική+Αρσενίου,+Πίνδου,+Καλαμπάκα,+Ελλάδα&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googl-ehtml" href="https://www.bootstrapskins.com/themes" id="grab-map-data">premium bootstrap themes</a><style>#my-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
+                </div> -->
 
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fas fa-assistive-listening-systems'></i>
-                            <h4 class="card-title mt-3">Recommendation Systems</h4>
-                            <p class="card-text mt-3" align="justify">Building information filtering systems (content-based and collaborative), that provide suggestions for items that are most pertinent to a particular user. Technologies like SVD factorization, k-nearest neighbors andsentiment analysis were implemented.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fas fa-drafting-compass'></i>
-                            <h4 class="card-title mt-3">Website Design and Development</h4>
-                            <p class="card-text mt-3" align="justify"> Settig up interactive websites using HTML, CSS, Javascript and PHP from the ground up. Control panels like Xammp and Database Systems came in handy.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='fas servicesIcon fas fa-database'></i>
-                            <h4 class="card-title mt-3">Database Building and Management</h4>
-                            <p class="card-text mt-3" align="justify"> Designing, creating, and analyzing requirements and their intents as raw data. Aiming to create a structure that will allow for the efficient storage and retrieval of data and how to manage and access them.
-                            </p>
-                        </div>
-                    </div>  
-                </div>
-            </div>
-			
-			
-        </div>
-    </section>
-
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-			<br>
-            <h1 class="text-center">Portfolio</h1>
-			
-			
-			
-			<!-- ZERO ROW -->
-			
-			<br></br>
-            <div class="row">
-			
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-						<img class="card-img-top" src="images/aishop.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 15px; width: 47.2%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Eshop empowered with AI</h4>
-							<p class="card-text" align="center"><FONT COLOR="#B22B27">*Under Construction*</FONT></p>
-                            <p class="card-text" align="justify">Fully functionable eshop built with 3 microservices for Angular, C# and Python. It generates recommendations for future sales for each customer, based on 
-							previous sales.</p>
-                            <div class="text-center">
-                                <a href="" target="_blank" class="btn btn-success">!</a>
-                            </div>
+                <div class="col-lg-3">
+                    <div style="max-width:100%;overflow:hidden;color:red;width:450px;height:350px;">
+                        <div id="gmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.264078008295!2d21.627887875536054!3d39.711247598275925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13590fc7e24a768f%3A0xf017d64f56578625!2zzpHOs86vzrHPgiDOpM-BzrnOrM60zr_PgiAyNiwgzprOsc67zrHOvM-AzqzOus6xIDQyMiAwMA!5e0!3m2!1sel!2sgr!4v1709300786265!5m2!1sel!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                 
                         </div>
                     </div>
                 </div>
-			
-			
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-						<img class="card-img-top" src="images/btc.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 15px; width: 68%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Cryptoworld Website</h4>
-							<p
-                            <p class="card-text" align="justify"> Website Made With Angular in order to showcase Crypto prices in Real-Time.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/cryptoworld" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-			
-			
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-						<img class="card-img-top" src="images/eshop.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 15px; width: 84%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Eshop Web API</h4>
-                            <p class="card-text" align="justify"> Web API in C# that manages Customers and Orders. Used Entity Framework, Repository
-							Patter, Unit Of Work, Domain Driven Desing and last but not least, Command and Query Responsibility Segregation.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/WebAPIeshop" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-			
-			
-                <div class="col-lg-4 mt-4">
+                                    
+                <div class="col-lg-4" style= " position:relative; left: 170px; top:50px;">
+                    <h3 class="" style="font-size: 35px">Opening Hours</h3>
+                    <br>
+                    <div  style= " position:relative; left: 17px;">
                     
+                        <table itemprop="openingHours">
+                            
+                            <tbody>					
+                            
+                                <tr>
+                                    <th class="" style="font-size: 26px">Mon:</th>
+                                    <td class="">
+                                        <span class="" style="font-size: 26px" >Open 24 hours </span>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <th class="" style="font-size: 26px">Tue:</th>
+                                    <td class="">
+                                        <span class="" style="font-size: 26px">Open 24 hours</span>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <th class="" style="font-size: 26px">Wed:</th>
+                                    <td class="">
+                                        <span class="" style="font-size: 26px">Open 24 hours</span>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <th class="" style="font-size: 26px">Thu: </th>
+                                    <td class="">
+                                        <span class="" style="font-size: 26px"> Open 24 hours </span>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                            
+                                    <th class="" style="font-size: 26px">Fri: </th>
+                                    <td class="">
+                                        <span class="" style="font-size: 26px">Open 24 hours</span>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                            
+                                    <th class="" style="font-size: 26px">Sat: </th>
+                                    <td class="">
+                                        <span class="" style="font-size: 26px">Open 24 hours </span>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <th class="" style="font-size: 26px">Sun:</th>
+                                    <td class="">
+                                        <span class="" style="font-size: 26px">Open 24 hours </span>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-
-                
-				
             </div>
-
-			<!-- FIRST ROW -->
-            
-			<div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <!-- <img class="center" src="images/ff.png" alt="Card image"> -->
-						<img class="card-img-top" src="images/ff.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 10px; width: 50%;">
-                        <div class="card-body">
-                            <h4 class="card-title">FireFinder</h4>
-                            <p class="card-text" align="justify">IoT system consisting of multiple nodes and gateways, aiming to record data that represent the forest status. Each node has a thermal camera and temperature, humidity, CO and CO2 sensors. With the implementation of a detection algorithm, a early fire prediction can be achieved.  </p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/FireFinder/tree/main" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
+        </section>
+    </main>
+    <!--=================== footer ====================-->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="d-grid footer__wrapper">
+                <div class="footer__content">
+                    <h4 class="footer__title">Let's Connect</h4>
+                    <ul class="footer__social-list">
+                        <!-- <li class="footer__social-item">
+                            <a href="" target="_blank" class="footer__social-link">
+                                <i class="ri-whatsapp-fill"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="" target="_blank" class="footer__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                        </li> -->
+                        <li class="footer__social-item">
+                            <a href="https://www.linkedin.com/in/chris-arseniou-383383190/" target="_blank" class="footer__social-link">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://github.com/ChrisArseniou" target="_blank" class="footer__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-            			<img class="card-img-top" src="images/inflation_round.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 10px; width: 84.5%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Inflation Forecasting</h4>
-                            <p class="card-text" align="justify">This is my diploma thesis. Using deep learning neural networks such as LSTM, and counting extrernal data and parameters such as unemployment rate and real estate circle, i aim to forecast the inflation rate for the upcoming years. </p>
-							
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Inflation-forecasting-thesis" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="footer__content">
+                    <h4 class="footer__title text-on-background">Email Me</h4>
+                    <a href="mailto:chris0arseniou@gmail.com" class="footer__contact">chris0arseniou@gmail.com</a>
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="center" src="images/ath.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 15px; width: 89.2%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Recommendation System for Athens Trip</h4>
-                            <p class="card-text" align="justify"> With data from TripAdvisor that refers to Hotels, Activities, Airlines and Restaurants and consists of usernames, ratings and reviews, a recommendation system was built. It can make recommendations based on a user's past, and based on a specific input for what the user is looking. </p>
-							
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Recommender-system-for-touristic-Athens-based-on-reviews-and-emotions" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="footer__content">
+                    <h4 class="footer__title text-on-background">Email Me</h4>
+                    <a href="#" class="footer__contact">+306984786516</a>
                 </div>
-				
             </div>
-			
-			<!-- SECOND ROW -->
-            <br></br>
-            <div class="row">
-			
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="center" src="images/qoe.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 15px; width: 100%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Quality Of Experience Prediction</h4>
-                            <p class="card-text" align="justify">With real data from a Fortune-500 company we built a sequence to sequence preditive machine learning model. Our main goal was to predict each user’s quality of experience of the events for the upcoming months.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/deep_learning_course" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>			
-			
-			
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-						<img class="card-img-top" src="images/crypto.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 15px; width: 84%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Cryptocurrency Price Forecasting</h4>
-                            <p class="card-text" align="justify"> Using Automated Machine Learning, i anticipate to predict bitcoin's and ethereum's price in upcoming months. The results are compared with the results of a forecasting with deep neural networks implemented with Keras and Pytorch.  </p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Cryptocurrency-Price-Forecasting" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-			
-			
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-						<img class="card-img-top" src="images/filebrowser.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 15px; width: 87%;">
-                        <div class="card-body">
-                            <h4 class="card-title">File Browser</h4>
-                            <p class="card-text" align="justify">With Java and especially the Swing GUI, i built a file browser. Users can copy, paste and move files, and navigate through their folders. </p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/File-Browser-In-Java" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-				
-            </div>
-			
-			<!-- THIRD ROW -->
-			<br></br>
-			 <div class="row">
-			 
-			 
-			 
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/lena.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 15px; width: 81%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Image Processing Software, <br> version 2</h4>
-                            <p class="card-text" align="justify">As mention before, using the swing GUI, i developed a program where users can apply certain algorithms to their pictures.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Image-Processing-Program-in-Java" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>	 
-				
-				
-				
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/expression.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 2px; width: 99%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Expression Tree</h4>
-                            <p class="card-text" align="justify">Java built program, which takes as input a mathematical expression and breaks it down to an expression tree</p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Expression-Tree-In-Java" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-			 
-			 
-			 
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-						<img class="card-img-top" src="images/airport.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 13px; width: 84%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Airport Management System</h4>
-                            <p class="card-text" align="justify">Developed with Microsoft Access and a PostgreSQL database. It contains users, airports and flights information which can be modified at any given time.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Fully-Functional-Airport-Database-in-PostGre-SQL-and-Microsoft-Access" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-				
-                
-            </div>
-			
-			<!-- FOURTH ROW -->
-			<br></br>
-			<div class="row">
-			
-			
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/business.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; width: 61.2%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Business Management System</h4>
-                            <p class="card-text" align="justify">Web app that helps business owners manage their sales,purchases and product stock. It was made with HTML 5, CSS and PHP. The Xammp control panel was used, to have access to the Apache Server and the MySQL database.    </p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Business-Management-System" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/emotion.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 13px; width: 50.1%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Twitter Sentiment Analysis</h4>
-                            <p class="card-text" align="justify">Natural language processing (NLP) that identifies the emotional tone behind a tweet, especially referring to Covid 19. Designs wordclouds for positive, negative and neutral tweets.The Streamlit python framework was really helpful in building the user interface.</p>
-                            <div class="text-center">
-                                <a href= "https://github.com/ChrisArseniou/Twitter-Sentiment-Analysis" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>	
-				
-						
-				
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/school.jpg" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; width: 99.6%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Student Database</h4>
-                            <p class="card-text" align="justify">Database implementation in C with plenty of pointers. A hash table was added. </p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Student-Database-Implemented-in-C" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-								
-			</div>
-			
-			
-			
-			<!-- FIFTH ROW -->
-			<br></br>
-			
-			<div class="row">
-			
-			
-			
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/answer.jpg" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; width: 100%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Answer Reward Point System</h4>
-                            <p class="card-text" align="justify">Program made with C language, that asks for user's answer and rewards with the correspoding points.</p>
-                            <div class="text-center">
-                                <a href= "https://github.com/ChrisArseniou/Program-in-C-that-compares-user-answer-with-the-correct-rewarding-with-the-appropriate-points" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-				
-				
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/minesweeper.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 13px; width: 80.8%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Minesweeper</h4>
-                            <p class="card-text" align="justify">Minesweeper program in C. I think it's harder that it sounds.</p>
-                            <div class="text-center">
-                                <a href= "https://github.com/ChrisArseniou/Minesweeper-In-C" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-				
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/pro.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 13px; width: 54%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Image Processing Software, <br> version 1</h4>
-                            <p class="card-text" align="justify">Image Processing program, similar to the one mentioned above, but this time it is implemented in C. User has the option to rotate a picture, change the luminocity, convert to grayscale and other actions, while always being able to save it to a new file.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Image-Processing-Program-Implemented-In-C" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-			</div>
-            
-
-			<!-- SIXTH ROW -->
-			<br></br>
-			
-			<div class="row">
-			
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/dijkstra.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; width: 100%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Dijkstra Algorithm</h4>
-                            <p class="card-text" align="justify">An algorithm for finding the shortest paths between nodes in a graph, implemented with C. </p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Dijkstra-Algorithm-Implemented-In-C" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-				
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/dictionary.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 13px; width: 52.5%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Dictionary</h4>
-                            <p class="card-text" align="justify">Dictionary in what else? C programming language. Checks if a word (user input) exists in the dictionary and if it does not, it displays the 2 most similar ones.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Dictionary-Implemented-in-C" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-				
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/calendar.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 13px; width: 80%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Calendar</h4>
-                            <p class="card-text" align="justify">This program, fulfills user's desire to check the detailed calendar for a specific month and year.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Calendar-Implemented-in-C" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-			</div>
-			
-			<!-- SEVENTH ROW -->
-			<br></br>
-			
-			<div class="row">
-			
-				
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/temple.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; margin-top: 13px; width: 66%;">
-                        <div class="card-body">
-                            <h4 class="card-title">Temple Builder </h4>
-                            <p class="card-text" align="justify">C program with complex for-loops designed to build a template.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Temple-Builder-Implemented-In-C" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				
-				
-			
-				<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/database.png" alt="Card image" style= "display: block; margin-left: auto; margin-right: auto; width: 100%;">
-                        <div class="card-body">
-                            <h4 class="card-title">TXT Database</h4>
-                            <p class="card-text" align="justify">Database in a text file. Using C file calls to open, write and save .txt files.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/ChrisArseniou/Database-In-text-File-Implemented-in-C" target="_blank" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>	
-
-				
-			</div>
-    </section>
-
-	<br>
-    <!-- contact section-->
-	
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <!-- <h1 class="text-center">Contact Me</h1> -->
-			<br>
-			<br>
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                     <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                    <div style="overflow:hidden;max-width:100%;width:500px;height:500px;"><div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Αγροζωοτροφική+Αρσενίου,+Πίνδου,+Καλαμπάκα,+Ελλάδα&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googl-ehtml" href="https://www.bootstrapskins.com/themes" id="grab-map-data">premium bootstrap themes</a><style>#my-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div>
-                </div>
-				
-				<!--
-                <div class="col-lg-6">
-
-                    <form action="contact.php" method="post">
-                        <input type="text" class="form-control form-control-lg" placeholder="Name" name = "visitor_name">
-                        <input type="email" class="form-control mt-3" placeholder="Email" name = "visitor_email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject" name = "email_title">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details" name = "visitor_message"></textarea>
-                        </div>
-						<button type="submit" class="btn btn-success mt-3">Contact Me</button>
-                    </form>
-                </div>
-				-->
-				
-				<div class="col-lg-4" style= " position:relative; left: 170px; top:50px;">
-					<h3 class="" style="font-size: 35px">Opening Hours</h3>
-					<br>
-					<div  style= " position:relative; left: 17px;">
-					
-						<table itemprop="openingHours">
-							
-							<tbody>					
-							
-								<tr>
-									<th class="" style="font-size: 26px">Mon:</th>
-									<td class="">
-										<span class="" style="font-size: 26px" >Open 24 hours </span>
-									</td>
-								</tr>
-							
-								<tr>
-									<th class="" style="font-size: 26px">Tue:</th>
-									<td class="">
-										<span class="" style="font-size: 26px">Open 24 hours</span>
-									</td>
-								</tr>
-								
-								<tr>
-									<th class="" style="font-size: 26px">Wed:</th>
-									<td class="">
-										<span class="" style="font-size: 26px">Open 24 hours</span>
-									</td>
-								</tr>
-								
-								<tr>
-									<th class="" style="font-size: 26px">Thu: </th>
-									<td class="">
-										<span class="" style="font-size: 26px"> Open 24 hours </span>
-									</td>
-								</tr>
-								
-								<tr>
-							
-									<th class="" style="font-size: 26px">Fri: </th>
-									<td class="">
-										<span class="" style="font-size: 26px">Open 24 hours</span>
-									</td>
-								</tr>
-								
-								<tr>
-							
-									<th class="" style="font-size: 26px">Sat: </th>
-									<td class="">
-										<span class="" style="font-size: 26px">Open 24 hours </span>
-									</td>
-								</tr>
-								
-								<tr>
-									<th class="" style="font-size: 26px">Sun:</th>
-									<td class="">
-										<span class="" style="font-size: 26px">Open 24 hours </span>
-									</td>
-								</tr>
-								
-							</tbody>
-						</table>
-					</div>
-					
-				</div>
-
-            </div>
-        </div>
-    </section>
-	
-    <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <!-- <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a> -->
-                <!-- <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a> -->
-                <!-- <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a> -->
-                <a href="https://www.linkedin.com/in/chris-arseniou-383383190/" target="_blank"><i class="fab fa-linkedin"></i></a>
-				<a href="https://github.com/ChrisArseniou" target="_blank"><i class="fab fa-github"></i></a>
-				<a href="resume.png" target="_blank"><i class="fab fas fa-file-alt"></i></a>
-                <!-- <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a> -->
-            </div>
+            <p class="footer__copyright">&copy; 2024 Christos Arseniou. All Rights Reserved</p>
         </div>
     </footer>
 
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
+    <!--=================== SwiperJS  ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+    <!--=================== ScrollReveal ==================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=================== Main JS ====================-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
+
