@@ -838,24 +838,6 @@ body {
     margin-bottom: 20px;
 }
 
-.hours-container {
-    position: relative;
-    left: 50%;
-    top: 50px;
-}
-
-@media (min-width: 768px) {
-    .map-container, .hours-container {
-        flex: 1;
-        margin-bottom: 0;
-    }
-
-    .hours-container {
-        position: static;
-        top: 0;
-        left: 0;
-    }
-}
 
 #contact2 .container {
   display: flex;
@@ -868,9 +850,18 @@ body {
 }
 
 .hours-container {
-  position: relative;
-  left: 9%;
-  top: 50px;
+            align-items: center;
+            text-align: center;
+			margin-top: 20%;
+}
+.hours-container table {
+	margin: 0 auto;
+}
+.hours-container th, .hours-container td {
+	font-size: 26px;
+}
+.hours-container h3 {
+	font-size: 35px;
 }
 
 @media (min-width: 768px) {
@@ -878,12 +869,20 @@ body {
 	  flex: 1;
       margin-bottom: 0;
   }
- 
+
 
   .hours-container {
 	  flex: 1;
-      margin-bottom: 100px;
-      left: 22%;
+      margin-top: 2%;
   }
+  
+  .hours-container h3 {
+	margin-left: 1%;
+  }
+  
+    .hours-container, table {
+	margin-left: 10%;
+  }
+
 }
 
